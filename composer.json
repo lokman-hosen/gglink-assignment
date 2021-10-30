@@ -1,0 +1,26 @@
+{
+    "name": "gglink/crud",
+    "description": "This will face data from api and perform a crud operation with permission and authentication",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lokman Hosen",
+            "email": "lokman.cse.pstu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Gglink\\CrudPermission\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gglink\\CrudPermission\\CrudWithPermissionServiceProvider"
+            ]
+        }
+    }
+}
